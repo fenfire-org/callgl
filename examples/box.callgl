@@ -1,0 +1,9 @@
+# Draw a box
+Color 1 1 1
+LineWidth 3
+Begin LINE_LOOP
+Vertex -1 -1
+Vertex -1 1
+Vertex 1 1
+Vertex 1 -1
+End

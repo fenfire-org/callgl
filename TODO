@@ -1,0 +1,41 @@
+Tasks for CallGL
+
+0.1alpha1: First separate release 
+    tjl:
+	- make it run
+    jvk, mudyc:
+	- packaging
+
+
+0.1alpha2: Desirable stuff
+	- .rst web page placeholder, simple abstract of what this is.
+	- full spec of the input format, i.e. #, \, &c. What about
+	  program strings?
+
+1.0: First public release
+    jvk, mudyc:
+	- list of functions not callable using callgl
+	- completeness of other functions
+
+ISSUES:
+
+- How should we return arrays from CallGL::get* calls?
+
+- Should we replace all the CallGL:get*Float functions with one that 
+  takes a string parameter such as "TexLevelParameter 5 0 TEXTURE_WIDTH" or
+  perhaps "TexLevelParameter 5 0", "TEXTURE_WIDTH"?
+
+- Should the callGL syntax be extended to support ';' separator
+  and '\' line continuation?
+
+- Should ProgramString / LoadProgramNV be callGL:able?
+
+- Should we make CallGL::Program general, i.e., make it use 
+  CallGL::loadProgram and store the TARGET type in a member variable?
+
+- Should we provide for other formats than PROGRAM_FORMAT_ASCII_ARB?
+
+- Can we make callgl_objects usable in jni or does one have to 
+  duplicate the functionality of the Program and DisplayList wrapper 
+  classes in java?
+

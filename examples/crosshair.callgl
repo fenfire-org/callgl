@@ -1,0 +1,7 @@
+LineWidth 3
+Begin LINES
+Vertex -1 0
+Vertex 1 0
+Vertex 0 -1
+Vertex 0 1
+End
